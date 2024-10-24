@@ -1,0 +1,493 @@
+@import "./defaulStyles";
+
+.right-side2 {
+  width: 50%;
+  .header {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    p {
+      font-size: 16px;
+      font-weight: bold;
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+  .line {
+    border-top: 1px solid rgba(185, 180, 195, 0.3);
+    margin-top: 10px;
+    margin-left: -80px;
+  }
+
+  .steps {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 7.7rem;
+    position: relative; /* Create a positioning context */
+    margin-bottom: 115px;
+    .persInfo,
+    .chessExp {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      gap: 0.5rem;
+      font-family: "Open Sans", sans-serif;
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    .firstStep,
+    .secondStep {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem;
+      border: 1px solid rgba(229, 230, 232, 1);
+      border-radius: 8px;
+    }
+
+    .firstStep {
+      font-weight: bold;
+    }
+    .secondStep {
+      background: rgba(245, 245, 245, 1);
+      color: rgba(149, 147, 154, 1);
+    }
+  }
+
+  .line2 {
+    border-top: 1px solid rgba(185, 180, 195, 0.3);
+    width: 183px;
+    background-color: rgb(255, 255, 255); /* Color of the line */
+    position: absolute;
+    bottom: 48px;
+    left: 98px;
+  }
+
+  .personal-information {
+    .header {
+      margin-bottom: 50px;
+      h2 {
+        font-size: 3.2rem;
+        font-weight: 600;
+        font-family: "Open Sans", sans-serif;
+        color: rgba(0, 0, 0, 1);
+      }
+      p {
+        font-size: 1.6rem;
+        color: rgba(149, 147, 154, 1);
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 88px;
+      gap: 20px;
+      input {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+        width: 70%;
+        height: 50px;
+        border: none;
+        font-size: 2rem;
+        padding-left: 20px;
+        font-family: "Open Sans", sans-serif;
+        position: relative;
+        &::placeholder {
+          font-size: 2rem;
+          color: rgba(33, 37, 41, 1);
+          transition: opacity 0.3s ease;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 400;
+        }
+        &:focus {
+          outline: none;
+          font-family: "Open Sans", sans-serif;
+          background: rgba(233, 236, 239, 1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        &:focus::placeholder {
+          opacity: 0;
+          font-family: "Open Sans", sans-serif;
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 69.5%;
+      .back-btn {
+        @include button-style;
+        color: black;
+        padding: 13px 24px;
+        border: 1px solid rgba(33, 37, 41, 1);
+        background: white;
+        border-radius: 8px;
+        height: 53px;
+        &:hover {
+          color: white;
+        }
+      }
+      .next-btn {
+        @include button-style;
+        height: 53px;
+      }
+    }
+  }
+}
+
+.input-wrapper {
+  display: flex;
+}
+
+.personal-info {
+  position: relative;
+}
+
+.error-input {
+  border-bottom: 2px solid rgba(255, 0, 0, 0.562) !important; /* Adjust the width and color as needed */
+}
+
+.valid-check {
+  height: 20px;
+  margin-left: -30px;
+  margin-top: 15px;
+  z-index: 1;
+}
+
+.error-div {
+  width: 35rem;
+  position: absolute;
+  right: 4rem;
+  top: 256px;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 40px;
+  .top-part {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    color: red;
+    font-size: 1.4rem;
+    margin-bottom: -10px;
+    justify-content: space-between;
+    button {
+      border: none;
+      cursor: pointer;
+      background-color: transparent;
+    }
+    .invalid-part {
+      text-wrap: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  .error-text {
+    font-size: 1.6rem;
+    padding-left: 20px;
+  }
+}
+
+.react-datepicker-wrapper {
+  width: 70% !important;
+}
+
+.react-datepicker {
+  width: 400px !important;
+  font-size: 1.5em; /* Adjust the font size as needed */
+}
+
+.react-datepicker__month-container {
+  width: 100% !important;
+  height: 300px;
+  overflow: auto;
+}
+
+.react-datepicker__header {
+  padding-bottom: 2rem;
+}
+
+.react-datepicker__day,
+.react-datepicker__month {
+  width: 50px; /* Adjust the width of days and months */
+  height: 40px;
+}
+
+.react-datepicker__day--selected {
+  background-color: #2077d4; /* Change selected day background */
+  color: white; /* Change selected day text color */
+  padding: 10px;
+}
+.react-datepicker__day,
+.react-datepicker__month {
+  padding: 10px;
+}
+
+.react-datepicker__day--hovered {
+  background-color: rgba(0, 123, 255, 0.5); /* Change hovered day background */
+}
+
+.react-datepicker__month-container {
+  width: 300px; /* Adjust the width of the month container */
+}
+
+.react-datepicker__day-names {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.react-datepicker__current-month {
+  font-size: 2rem;
+}
+
+.personal-info4 {
+  width: 100% !important;
+}
+
+@media (max-width: 767px) {
+
+  .react-datepicker-wrapper {
+    width: 88% !important;
+  }
+
+  .react-datepicker {
+    width: 245px !important;
+  }
+
+  .line2 {
+    width: 140px !important;
+    bottom: 42px !important;
+    left: 81px !important;
+  }
+  .firstPage .left-side .purple-header {
+    padding-left: 20px;
+  }
+
+  .right-side2 .line {
+    margin-top: 3px;
+  }
+
+  .right-side2 .steps {
+    margin-bottom: 130px;
+  }
+
+  .right-side2 .personal-information form input {
+    width: 88%;
+  }
+
+  .react-datepicker__input-container {
+    width: 100% !important;
+  }
+
+  .textOnImg {
+    width: 93%;
+    left: 50% !important;
+  }
+
+  .react-datepicker__day, .react-datepicker__month {
+    width: 31px !important;
+  }
+  .react-datepicker__month {
+    margin: -0.7rem;
+  }
+
+  .react-datepicker-popper {
+    left: 38px !important;
+  }
+}
+
+@media (max-width: 626px) {
+  .right-side2 .personal-information form input {
+    width: 90%;
+  }
+
+  .right-side2 .steps {
+    margin-bottom: 150px;
+  }
+
+  .middleText {
+    margin-right: 40px !important;
+  }
+  .line2 {
+    width: 92px !important;
+    bottom: 37px !important;
+    left: 67px !important;
+  }
+
+  .line {
+    margin-top: -3px !important;
+  }
+
+
+  .right-side2 .personal-information form input {
+    width: 95%;
+  }
+
+  .react-datepicker-wrapper {
+    width: 95% !important;
+  }
+
+  .right-side2 .personal-information .buttons{
+    width: 95%;
+    .next-btn,
+    .back-btn {
+       font-size: 1.8rem;
+       height: 40px;
+      }
+    .next-btn {
+      img {
+        height: 15px !important;
+      }
+    }
+  }
+
+  .right-side2 .header p {
+    font-size: 14px;
+  }
+  .line {
+    margin-top: -1px !important;
+  }
+
+}
+
+@media (max-width: 455px) {
+  .right-side2 .personal-information .buttons{
+    width: 99%;
+    .next-btn,
+    .back-btn {
+       font-size: 1.8rem;
+       height: 40px;
+      }
+    .next-btn {
+      img {
+        height: 15px !important;
+      }
+    }
+  }
+
+  .line2  {
+    bottom: 35px !important;
+    left: 66px !important;
+    width: 95px !important;
+  }
+  .right-side2 .steps .persInfo p, .right-side2 .steps .chessExp p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 446px) {
+  .line2 {
+    bottom: 50px !important;
+    width: 42% !important;
+    left: 31% !important;
+  }
+
+  .firstPage .left-side .purple-header h3 {
+    text-wrap: wrap;
+  }
+}
+
+
+.line3 {
+  border-top: 1px solid rgba(185, 180, 195, 0.3);
+  margin-top: 10px;
+}
+
+.error-text {
+  line-height: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.leftImg-div {
+  position: relative;
+}
+
+.textOnImg {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  top: 28%; /* Move the top to the middle of the container */
+  left: 37%; /* Optional: center horizontally */
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  .txt1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    font-style: italic;
+    max-width: 403px;
+    line-height: 35.46px;
+  }
+
+  .txt2 {
+    font-size: 2.4rem;
+    font-family: 500;
+    font-style: italic;
+    color: rgba(229, 230, 232, 1);
+  }
+}
+
+.textOnImg3 {
+
+  .txt1 {
+    max-width: 615px;
+  }
+  .txt2 {
+    color: rgba(9, 63, 104, 1);
+  }
+
+  .txt2-div {
+    display: flex;
+
+    justify-content: end;
+  }
+}
+
+@media (max-width: 447px) {
+  .line {
+    margin-top: 20px !important;
+  }
+  .right-side2 .header {
+    padding-right: 3px;
+  }
+
+}
+
+@media (max-width: 404px) {
+  .firstPage .left-side .purple-header {
+    height: 123.42px ;
+  }
+}
+
+
+
+
+
+.secondStep2 {
+  background-color: rgba(233, 250, 241, 1);
+  color: rgba(33, 37, 41, 1);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.firstStep2 {
+  background-color: rgba(233, 250, 241, 1);
+}
+
+.two {
+  color: black !important;
+}
+
+
+

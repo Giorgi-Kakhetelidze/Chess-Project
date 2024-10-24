@@ -1,0 +1,124 @@
+@import "./defaulStyles";
+
+.firstPage {
+    display: flex;
+    .left-side {
+        width: 50%;
+        position: relative;
+        .purple-header {
+            display: flex;
+            color: white;
+            background: rgba(112, 37, 251, 1);
+            padding: 30px;
+            padding-left: 60px;
+            align-items: center;
+            gap: 10px;
+            h3 {
+                font-weight: 1000;
+                font-size: 2.35rem;
+                text-wrap: nowrap;
+            }
+            img {
+                object-fit: cover;
+                height: 19px;
+            }
+        }
+    
+        .leftImg {
+            width: 100%;
+            height: 978px;
+            object-fit: cover;
+        }
+    }
+    
+    .right-side {
+        background: rgba(253, 83, 52, 1);
+        width: 50%;
+        .middleText {
+          margin-top: 265px;
+          margin-left: 8.5rem;
+          margin-bottom: 102px;
+          h2 {
+              font-size: 8rem;
+              color: white;
+              display: inline-block;
+              
+              .aLot {
+                font-size: 2rem;
+                color: rgba(33, 37, 41, 1);
+                vertical-align: middle;  
+                white-space: nowrap; 
+                position: relative;  
+                top: -7px;
+                left: 26px;
+              }
+          }
+
+        }
+
+        .start-btn {
+          @include button-style;
+          margin-left: 8.5rem;
+
+        }
+    }
+     
+
+
+
+}
+
+
+@media (max-width: 1500px) {
+  .firstPage .right-side .middleText{
+    margin-top: 340px;
+    margin-left: 40px;
+    h2 {
+      font-size: 6rem;
+      .aLot {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .start-btn {
+    margin-left: 40px !important;
+  }
+  
+}
+
+
+@media (max-width: 1375px) {
+  .firstPage .right-side .middleText{
+    margin-left: 20px;
+    margin-top: 370px;
+    h2 {
+      font-size: 5.5rem;
+      
+    }
+  }
+  .start-btn {
+    margin-left: 20px !important;
+    font-size: 1.6rem !important;
+  }
+}
+
+
+@media (max-width: 1047px) {
+  .firstPage .right-side .middleText{
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-top: 430px;
+    h2 {
+      font-size: 4rem;
+      .aLot {
+        font-size: 1.3rem;
+        top: -4px;
+      }
+    }
+  }
+  .start-btn {
+    margin-left: 20px !important;
+    font-size: 1.4rem !important;
+    padding: 10px 17px !important;
+  }
+}

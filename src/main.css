@@ -1,0 +1,865 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+.firstPage {
+  display: flex;
+}
+.firstPage .left-side {
+  width: 50%;
+  position: relative;
+}
+.firstPage .left-side .purple-header {
+  display: flex;
+  color: white;
+  background: rgb(112, 37, 251);
+  padding: 30px;
+  padding-left: 60px;
+  align-items: center;
+  gap: 10px;
+}
+.firstPage .left-side .purple-header h3 {
+  font-weight: 1000;
+  font-size: 2.35rem;
+  text-wrap: nowrap;
+}
+.firstPage .left-side .purple-header img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 19px;
+}
+.firstPage .left-side .leftImg {
+  width: 100%;
+  height: 978px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.firstPage .right-side {
+  background: rgb(253, 83, 52);
+  width: 50%;
+}
+.firstPage .right-side .middleText {
+  margin-top: 265px;
+  margin-left: 8.5rem;
+  margin-bottom: 102px;
+}
+.firstPage .right-side .middleText h2 {
+  font-size: 8rem;
+  color: white;
+  display: inline-block;
+}
+.firstPage .right-side .middleText h2 .aLot {
+  font-size: 2rem;
+  color: rgb(33, 37, 41);
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  top: -7px;
+  left: 26px;
+}
+.firstPage .right-side .start-btn {
+  color: white;
+  background: rgb(33, 37, 41);
+  font-family: "Open Sans", sans-serif;
+  padding: 15px 24px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-left: 8.5rem;
+}
+.firstPage .right-side .start-btn:hover {
+  background-color: black;
+}
+
+@media (max-width: 1500px) {
+  .firstPage .right-side .middleText {
+    margin-top: 340px;
+    margin-left: 40px;
+  }
+  .firstPage .right-side .middleText h2 {
+    font-size: 6rem;
+  }
+  .firstPage .right-side .middleText h2 .aLot {
+    font-size: 1.5rem;
+  }
+  .start-btn {
+    margin-left: 40px !important;
+  }
+}
+@media (max-width: 1375px) {
+  .firstPage .right-side .middleText {
+    margin-left: 20px;
+    margin-top: 370px;
+  }
+  .firstPage .right-side .middleText h2 {
+    font-size: 5.5rem;
+  }
+  .start-btn {
+    margin-left: 20px !important;
+    font-size: 1.6rem !important;
+  }
+}
+@media (max-width: 1047px) {
+  .firstPage .right-side .middleText {
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-top: 430px;
+  }
+  .firstPage .right-side .middleText h2 {
+    font-size: 4rem;
+  }
+  .firstPage .right-side .middleText h2 .aLot {
+    font-size: 1.3rem;
+    top: -4px;
+  }
+  .start-btn {
+    margin-left: 20px !important;
+    font-size: 1.4rem !important;
+    padding: 10px 17px !important;
+  }
+}
+.right-side2 {
+  width: 50%;
+}
+.right-side2 .header {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.right-side2 .header p {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+.right-side2 .line {
+  border-top: 1px solid rgba(185, 180, 195, 0.3);
+  margin-top: 10px;
+  margin-left: -80px;
+}
+.right-side2 .steps {
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 7.7rem;
+  position: relative; /* Create a positioning context */
+  margin-bottom: 115px;
+}
+.right-side2 .steps .persInfo,
+.right-side2 .steps .chessExp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+.right-side2 .steps .persInfo p,
+.right-side2 .steps .chessExp p {
+  font-size: 1.6rem;
+}
+.right-side2 .steps .firstStep,
+.right-side2 .steps .secondStep {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  border: 1px solid rgb(229, 230, 232);
+  border-radius: 8px;
+}
+.right-side2 .steps .firstStep {
+  font-weight: bold;
+}
+.right-side2 .steps .secondStep {
+  background: rgb(245, 245, 245);
+  color: rgb(149, 147, 154);
+}
+.right-side2 .line2 {
+  border-top: 1px solid rgba(185, 180, 195, 0.3);
+  width: 183px;
+  background-color: rgb(255, 255, 255); /* Color of the line */
+  position: absolute;
+  bottom: 48px;
+  left: 98px;
+}
+.right-side2 .personal-information .header {
+  margin-bottom: 50px;
+}
+.right-side2 .personal-information .header h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(0, 0, 0);
+}
+.right-side2 .personal-information .header p {
+  font-size: 1.6rem;
+  color: rgb(149, 147, 154);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+.right-side2 .personal-information form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 88px;
+  gap: 20px;
+}
+.right-side2 .personal-information form input {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  width: 70%;
+  height: 50px;
+  border: none;
+  font-size: 2rem;
+  padding-left: 20px;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+.right-side2 .personal-information form input::-moz-placeholder {
+  font-size: 2rem;
+  color: rgb(33, 37, 41);
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.right-side2 .personal-information form input::placeholder {
+  font-size: 2rem;
+  color: rgb(33, 37, 41);
+  transition: opacity 0.3s ease;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.right-side2 .personal-information form input:focus {
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  background: rgb(233, 236, 239);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.right-side2 .personal-information form input:focus::-moz-placeholder {
+  opacity: 0;
+  font-family: "Open Sans", sans-serif;
+}
+.right-side2 .personal-information form input:focus::placeholder {
+  opacity: 0;
+  font-family: "Open Sans", sans-serif;
+}
+.right-side2 .personal-information .buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 69.5%;
+}
+.right-side2 .personal-information .buttons .back-btn {
+  color: white;
+  background: rgb(33, 37, 41);
+  font-family: "Open Sans", sans-serif;
+  padding: 15px 24px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  color: black;
+  padding: 13px 24px;
+  border: 1px solid rgb(33, 37, 41);
+  background: white;
+  border-radius: 8px;
+  height: 53px;
+}
+.right-side2 .personal-information .buttons .back-btn:hover {
+  background-color: black;
+}
+.right-side2 .personal-information .buttons .back-btn:hover {
+  color: white;
+}
+.right-side2 .personal-information .buttons .next-btn {
+  color: white;
+  background: rgb(33, 37, 41);
+  font-family: "Open Sans", sans-serif;
+  padding: 15px 24px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  height: 53px;
+}
+.right-side2 .personal-information .buttons .next-btn:hover {
+  background-color: black;
+}
+
+.input-wrapper {
+  display: flex;
+}
+
+.personal-info {
+  position: relative;
+}
+
+.error-input {
+  border-bottom: 2px solid rgba(255, 0, 0, 0.562) !important; /* Adjust the width and color as needed */
+}
+
+.valid-check {
+  height: 20px;
+  margin-left: -30px;
+  margin-top: 15px;
+  z-index: 1;
+}
+
+.error-div {
+  width: 35rem;
+  position: absolute;
+  right: 4rem;
+  top: 256px;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 40px;
+}
+.error-div .top-part {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  color: red;
+  font-size: 1.4rem;
+  margin-bottom: -10px;
+  justify-content: space-between;
+}
+.error-div .top-part button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.error-div .top-part .invalid-part {
+  text-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.error-div .error-text {
+  font-size: 1.6rem;
+  padding-left: 20px;
+}
+
+.react-datepicker-wrapper {
+  width: 70% !important;
+}
+
+.react-datepicker {
+  width: 400px !important;
+  font-size: 1.5em; /* Adjust the font size as needed */
+}
+
+.react-datepicker__month-container {
+  width: 100% !important;
+  height: 300px;
+  overflow: auto;
+}
+
+.react-datepicker__header {
+  padding-bottom: 2rem;
+}
+
+.react-datepicker__day,
+.react-datepicker__month {
+  width: 50px; /* Adjust the width of days and months */
+  height: 40px;
+}
+
+.react-datepicker__day--selected {
+  background-color: #2077d4; /* Change selected day background */
+  color: white; /* Change selected day text color */
+  padding: 10px;
+}
+
+.react-datepicker__day,
+.react-datepicker__month {
+  padding: 10px;
+}
+
+.react-datepicker__day--hovered {
+  background-color: rgba(0, 123, 255, 0.5); /* Change hovered day background */
+}
+
+.react-datepicker__month-container {
+  width: 300px; /* Adjust the width of the month container */
+}
+
+.react-datepicker__day-names {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.react-datepicker__current-month {
+  font-size: 2rem;
+}
+
+.personal-info4 {
+  width: 100% !important;
+}
+
+@media (max-width: 767px) {
+  .react-datepicker-wrapper {
+    width: 88% !important;
+  }
+  .react-datepicker {
+    width: 245px !important;
+  }
+  .line2 {
+    width: 140px !important;
+    bottom: 42px !important;
+    left: 81px !important;
+  }
+  .firstPage .left-side .purple-header {
+    padding-left: 20px;
+  }
+  .right-side2 .line {
+    margin-top: 3px;
+  }
+  .right-side2 .steps {
+    margin-bottom: 130px;
+  }
+  .right-side2 .personal-information form input {
+    width: 88%;
+  }
+  .react-datepicker__input-container {
+    width: 100% !important;
+  }
+  .textOnImg {
+    width: 93%;
+    left: 50% !important;
+  }
+  .react-datepicker__day, .react-datepicker__month {
+    width: 31px !important;
+  }
+  .react-datepicker__month {
+    margin: -0.7rem;
+  }
+  .react-datepicker-popper {
+    left: 38px !important;
+  }
+}
+@media (max-width: 626px) {
+  .right-side2 .personal-information form input {
+    width: 90%;
+  }
+  .right-side2 .steps {
+    margin-bottom: 150px;
+  }
+  .middleText {
+    margin-right: 40px !important;
+  }
+  .line2 {
+    width: 92px !important;
+    bottom: 37px !important;
+    left: 67px !important;
+  }
+  .line {
+    margin-top: -3px !important;
+  }
+  .right-side2 .personal-information form input {
+    width: 95%;
+  }
+  .react-datepicker-wrapper {
+    width: 95% !important;
+  }
+  .right-side2 .personal-information .buttons {
+    width: 95%;
+  }
+  .right-side2 .personal-information .buttons .next-btn,
+  .right-side2 .personal-information .buttons .back-btn {
+    font-size: 1.8rem;
+    height: 40px;
+  }
+  .right-side2 .personal-information .buttons .next-btn img {
+    height: 15px !important;
+  }
+  .right-side2 .header p {
+    font-size: 14px;
+  }
+  .line {
+    margin-top: -1px !important;
+  }
+}
+@media (max-width: 455px) {
+  .right-side2 .personal-information .buttons {
+    width: 99%;
+  }
+  .right-side2 .personal-information .buttons .next-btn,
+  .right-side2 .personal-information .buttons .back-btn {
+    font-size: 1.8rem;
+    height: 40px;
+  }
+  .right-side2 .personal-information .buttons .next-btn img {
+    height: 15px !important;
+  }
+  .line2 {
+    bottom: 35px !important;
+    left: 66px !important;
+    width: 95px !important;
+  }
+  .right-side2 .steps .persInfo p, .right-side2 .steps .chessExp p {
+    text-align: center;
+  }
+}
+@media (max-width: 446px) {
+  .line2 {
+    bottom: 50px !important;
+    width: 42% !important;
+    left: 31% !important;
+  }
+  .firstPage .left-side .purple-header h3 {
+    text-wrap: wrap;
+  }
+}
+.line3 {
+  border-top: 1px solid rgba(185, 180, 195, 0.3);
+  margin-top: 10px;
+}
+
+.error-text {
+  line-height: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.leftImg-div {
+  position: relative;
+}
+
+.textOnImg {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  top: 28%; /* Move the top to the middle of the container */
+  left: 37%; /* Optional: center horizontally */
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.textOnImg .txt1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  font-style: italic;
+  max-width: 403px;
+  line-height: 35.46px;
+}
+.textOnImg .txt2 {
+  font-size: 2.4rem;
+  font-family: 500;
+  font-style: italic;
+  color: rgb(229, 230, 232);
+}
+
+.textOnImg3 .txt1 {
+  max-width: 615px;
+}
+.textOnImg3 .txt2 {
+  color: rgb(9, 63, 104);
+}
+.textOnImg3 .txt2-div {
+  display: flex;
+  justify-content: end;
+}
+
+@media (max-width: 447px) {
+  .line {
+    margin-top: 20px !important;
+  }
+  .right-side2 .header {
+    padding-right: 3px;
+  }
+}
+@media (max-width: 404px) {
+  .firstPage .left-side .purple-header {
+    height: 123.42px;
+  }
+}
+.secondStep2 {
+  background-color: rgb(233, 250, 241);
+  color: rgb(33, 37, 41);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.firstStep2 {
+  background-color: rgb(233, 250, 241);
+}
+
+.two {
+  color: black !important;
+}
+
+.css-b62m3t-contain {
+  width: 39.2%;
+}
+.css-b62m3t-contain .css-13cymwt-control {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+  box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.13) inset;
+  cursor: pointer;
+}
+.css-b62m3t-contain .css-1u9des2-indicatorSeparator {
+  display: none;
+}
+
+.knowledge-Level {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: black !important;
+  box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.13) inset;
+}
+
+.css-t3ipsp-control {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.css-1nmdiq5-menu {
+  cursor: pointer;
+}
+
+.inputs3 {
+  display: flex;
+  gap: 5%;
+  margin-bottom: 80px;
+}
+
+.knowledge-Level {
+  max-height: 38px;
+  cursor: pointer !important;
+}
+
+.css-qr46ko div {
+  justify-content: space-between;
+  font-size: 1.7rem !important;
+}
+.css-qr46ko div img {
+  height: 72px !important;
+  width: 100px !important;
+  border-radius: 4px;
+}
+
+.css-xfvgzu-control {
+  cursor: pointer;
+}
+
+.lastInput {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.lastInput h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.lastInput div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.lastInput div label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+.lastInput div label input {
+  height: 20px;
+  width: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 69.5%;
+}
+.buttons .back-btn {
+  color: white;
+  background: rgb(33, 37, 41);
+  font-family: "Open Sans", sans-serif;
+  padding: 15px 24px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  color: black;
+  padding: 13px 24px;
+  border: 1px solid rgb(33, 37, 41);
+  background: white;
+  border-radius: 8px;
+  height: 53px;
+}
+.buttons .back-btn:hover {
+  background-color: black;
+}
+.buttons .back-btn:hover {
+  color: white;
+}
+.buttons .next-btn {
+  color: white;
+  background: rgb(33, 37, 41);
+  font-family: "Open Sans", sans-serif;
+  padding: 15px 24px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  height: 53px;
+}
+.buttons .next-btn:hover {
+  background-color: black;
+}
+
+.textOnImg3 {
+  left: 41%;
+  top: 33%;
+  width: 70%;
+}
+
+.header2 {
+  margin-right: 20px !important;
+}
+
+@media (max-width: 1010px) {
+  .inputs3 {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+@media (max-width: 837px) {
+  .purple-header3 {
+    height: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .purple-header3 {
+    height: 112px;
+  }
+}
+@media (max-width: 627px) {
+  .purple-header3 {
+    height: 102px;
+  }
+  .steps3 {
+    margin-bottom: 40px !important;
+  }
+  .back-btn3,
+  .next-btn3 {
+    height: 40px !important;
+  }
+  .knowledge-Level {
+    font-size: 10px;
+  }
+}
+@media (max-width: 448px) {
+  .purple-header3 {
+    height: 123px;
+  }
+  .textOnImg3 {
+    width: 95%;
+  }
+  .textOnImg3 p {
+    font-size: 2rem !important;
+  }
+}
+@media (max-width: 432px) {
+  .purple-header3 {
+    height: 144px !important;
+  }
+}
+.rightSide {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightSide div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.rightSide div img {
+  max-height: 190px;
+  max-width: 183px;
+}
+.rightSide div h2 {
+  font-size: 3.6rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+}
+
+@media (max-width: 745px) {
+  .onboarding {
+    font-size: 3rem !important;
+  }
+}
+@media (max-width: 627px) {
+  .rocket {
+    max-height: 120px !important;
+  }
+}
+@media (max-width: 430px) {
+  .onboarding {
+    font-size: 2.5rem !important;
+  }
+  .rocket {
+    max-height: 120px !important;
+  }
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  margin-left: 4%;
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 626px) {
+  .container {
+    margin-left: 2%;
+  }
+  html {
+    font-size: 6px;
+  }
+}/*# sourceMappingURL=main.css.map */

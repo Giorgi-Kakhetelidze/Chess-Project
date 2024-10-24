@@ -1,0 +1,42 @@
+.rightSide {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        img {
+            max-height: 190px;
+            max-width: 183px;
+        }
+        h2 {
+            font-size: 3.6rem;
+            font-family: "Nunito", sans-serif;
+            font-weight: 800;
+        }
+    }
+}
+
+@media (max-width: 745px) {
+    .onboarding {
+        font-size: 3rem !important;
+    }
+}
+
+@media (max-width: 627px) {
+    .rocket {
+        max-height: 120px !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .onboarding {
+        font-size: 2.5rem !important;
+    }
+    .rocket {
+        max-height: 120px !important;
+    }
+}
