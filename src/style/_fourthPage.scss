@@ -20,9 +20,31 @@
     }
 }
 
+.leftImd-Div {
+    position: relative;
+    h3 {
+        font-size: 3rem;
+        font-family: "Nunito", sans-serif;
+
+    }
+    .userInfo {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        transform: translate(-10%, -10%);
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: "Nunito", sans-serif;
+        line-height: 50px;
+    }
+}
+
 @media (max-width: 745px) {
     .onboarding {
         font-size: 3rem !important;
+    }
+    .userInfo {
+        line-height: 40px !important;
     }
 }
 
